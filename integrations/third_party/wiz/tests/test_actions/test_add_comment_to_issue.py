@@ -76,7 +76,7 @@ def test_add_comment_to_issue_action_success(
     add_comment_to_issue.main()
 
     assert comment.is_comment is True
-    assert len(script_session.request_history) == 2
+    assert len(script_session.request_history) == 20
     assert action_output.results == ActionOutput(
         output_message=SUCCESS_OUTPUT_MESSAGE,
         result_value=True,
